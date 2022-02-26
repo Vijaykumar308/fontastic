@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- icon of close -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>webpage</title>
+	<!-- Roboto font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Montserrat font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+	<!-- Oswald font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
+	<!-- Muli font style -->				
+	<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+	<!-- Lobster font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<!-- Dancing font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+	<!-- Righteous font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
+	<!-- Monoton font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Monoton&family=Righteous&display=swap" rel="stylesheet">
+	<!-- Kelly slab font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+		<!-- jquery CDN link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- External css stylie sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div id="head">
+		<h1>Fontastic</h1>
+	</div>
+	<div class="workarea">
+		<div class="leftside">
+				<p>Enter Your Text Here</p>
+		</div>
+
+		<div id="rightside">
+			<input type="text" id="textvalue" placeholder="Enter your text">
+			<input type="submit" id="submit">
+			<p>
+				<label>Set background Image</label><br>
+				<input type="file" id="image"><br>
+				<label>Set background Color</label>
+				<input type="color" id="bgcolor" style="margin: 20px 0px;" name="bgcolored" value="#ffffff"><br>
+				<label>Set Font Color</label>
+				<input type="color" value="#000000" id="fontcolor">
+			</p>
+		</div>
+	</div>
+<section>
+	<div id="popupbox">
+		<i class="fa fa-close" id="close" style="font-size:24px"></i>
+		<h2>Get font From Fontastic</h2>		
+		<h3>Add this code to your site in you head section of html<h3>
+		  <div id="linkcode">
+		  	<p id="cdn" class="ccc"><code> < </code></p>
+		  </div>
+		<h3>Activate the font for text in your CSS:</h3>
+		  <div id="csscode"><p id="cdn" style="font-weight: normal;">font-family: 'Roboto', sans-serif;</p></div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#close").click(function(){
+				$("section").hide();
+			});
+		});
+	</script>
+</section>
+	<main>
+	<div id="maindiv">
+		<div class="firstdiv">
+			<div id="box1">
+				<p style="font-family: 'Roboto', sans-serif;">Enter Your Text Here</p>
+				<b class="getfont" id="cdn1" style="margin-top: 45px;">Get code for Roboto font</b>
+			</div>
+			<div id="box1">
+				<p style="font-family: 'Montserrat', sans-serif;">Enter Your Text Here</p>
+				<b class="getfont" id="cdn2" style="margin-top: 45px;">Get code for Montserrat font</b>
+			</div>
+			<div id="box1">
+				<p style="font-family: 'Oswald', sans-serif; font-size: 52px; margin-top: -35px; ">Enter Your Text Here</p>
+				<b class="getfont" id="cdn3" style="margin-top: 40px; ">Get code for Oswald font</b>
+			</div>
+		</div>
+
+		<div class="firstdiv" style="margin-top: 26%;">
+			<div id="box1">
+				<p style="font-family: 'Muli', sans-serif;">Enter Your Text Here</p>
+				<b class="getfont" id="cdn4" style="margin-top: 40px;">Get code for Muli font</b>
+			</div>
+			<div id="box1">
+				<p style="font-family: 'Lobster'; font-size: 46px;">Enter Your Text Here</p>
+				<b class="getfont" id="cdn5" style="margin-top: 45px;">Get code for Lobster font</b>
+			</div>
+			<div id="box1">
+				<p style="font-family: 'Dancing Script', cursive;">Enter Your Text Here</p> 
+				<b class="getfont" id="cdn6" style="margin-top: 40px;">Get code for Dancing Script</b></div>
+		</div>
+
+		<div class="firstdiv" style="margin-top: 52%;">
+			<div id="box1"><p style="font-family: 'Righteous', cursive;">Enter Your Text Here</p><b class="getfont" id="cdn7" style="margin-top: 40px;">Get code for Righteous font</b></div>
+			<div id="box1"><p style="font-family: 'Monoton', cursive;">Enter Your Text Here</p><b class="getfont" id="cdn8" style="margin-top: 40px;">Get code for Monoton font</b></div>
+			<div id="box1"><p style="font-family: 'Kelly Slab', cursive;">Enter Your Text Here</p><b class="getfont" id="cdn9" style="margin-top: 40px;">Get code for Kelly Slab font</b></div>
+		</div>
+	</div>
+	<!-- <script>
+			$(document).ready(function(){
+				$(".firstdiv #box1 #getfont").click(function(){
+					$("section").show();
+
+				});
+			});
+		</script> -->
+		<!-- jquery for different different fonts -->
+		<!-- box1 code -->
+		<script>
+			// &lt and &#060 are the code for < symbole
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn1").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Roboto', sans-serif;");
+			});
+		});
+	</script>
+	<!-- box 2 code -->
+	<!--  &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn2").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Montserrat', sans-serif;");
+			});
+		});
+	</script>
+	<!-- box 3 code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+	<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn3").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Oswald', sans-serif;");
+			});
+		});
+	</script>
+	<!-- box 4 code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn4").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&#060link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Muli', sans-serif;");
+			});
+		});
+	</script>
+		<!-- box5 code -->
+		<!-- &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn5").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Lobster';");
+			});
+		});
+	</script>
+	<!-- box 6 code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn6").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&#060link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Dancing Script', cursive;");
+			});
+		});
+	</script>
+	<!-- box7code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+	<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn7").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Righteous&display=swap" rel="stylesheet">"');
+				$("section #csscode p").html("font-family: 'Righteous', cursive;");
+			});
+		});
+	</script>
+	<!-- box8 code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn8").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Monoton&family=Righteous&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Monoton', cursive;");
+			});
+		});
+	</script>
+	<!-- box9 code -->
+	<!-- &lt and &#060 are the code for < symbole -->
+		<script>
+		$(document).ready(function(){
+			$(".firstdiv #box1 #cdn9").click(function(){
+				$("section").show();
+				$("section #linkcode .ccc").html('&ltlink href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">');
+				$("section #csscode p").html("font-family: 'Kelly Slab', cursive;");
+			});
+		});
+	</script>
+		<!-- fill text in main section in all 9 boxes -->
+	<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				var bgcolor = document.getElementById('bgcolor').value;
+				var fontcolor = document.getElementById('fontcolor').value;
+				var text = document.getElementById('textvalue').value;
+				// var bgimg=document.getElementById('image').value;
+				$(".firstdiv #box1 p").html(text);
+				$(".firstdiv #box1 p").css("color",fontcolor);
+				$(".firstdiv #box1").css("background-color",bgcolor);
+			});
+	});	
+	</script>
+</main>
+</header>
+<!-- fill text in workarea with query code -->
+<script>
+	$(document).ready(function(){
+		$("#submit").click(function(){
+			var bgcolor = document.getElementById('bgcolor').value;
+			var fontcolor = document.getElementById('fontcolor').value;
+			var text = document.getElementById('textvalue').value;
+			var bgimg=document.getElementById('image').value;
+			$(".workarea .leftside p").html(text);
+			$(".workarea .leftside").css("background-color",bgcolor);
+			$(".workarea .leftside p").css("color",fontcolor);
+			// $(".workarea .leftside").css("background-image",url('bgimg'));
+		});
+	});
+</script>
+<footer>
+	<div id="footerpart">
+		<p>Fontastic Pvt.limted</p>
+	</div>
+</footer>
+</body>
+</html>
